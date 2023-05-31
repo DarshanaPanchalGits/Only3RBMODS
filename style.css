@@ -44,7 +44,7 @@ font-weight: bold;
 }
 #introduction {
     position: relative;
-    overflow: hidden;
+
   }
   
   .bg-video-container {
@@ -61,22 +61,7 @@ font-weight: bold;
     object-fit: cover;
     opacity: 0.3; /* Adjust the opacity as desired */
   }
-  
-  @media only screen and (max-width: 768px) {
-    .bg-video-container {
-      position: relative;
-      height: 0;
-      padding-bottom: 56.25%;
-    }
-  
-    .bg-video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-  }
+
   
   
 /* Introduction styles */
