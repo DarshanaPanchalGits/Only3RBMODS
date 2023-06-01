@@ -260,3 +260,50 @@ color: #fff;
 }
 }
 
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  #status {
+    background-color: #1e272e;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  #status h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+    display: inline;
+    animation: marquee 8s linear infinite;
+  }
+
+  #status span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #27ae60;
+    margin: 0;
+    display: inline;
+  }
+
+  /* Adjust animation speed for mobile devices */
+  @media only screen and (max-width: 768px) {
+    #status h2 {
+      animation-duration: 12s;
+    }
+  }
+
+  /* Adjust animation speed for smaller mobile devices */
+  @media only screen and (max-width: 480px) {
+    #status h2 {
+      animation-duration: 16s;
+    }
+  }
+
